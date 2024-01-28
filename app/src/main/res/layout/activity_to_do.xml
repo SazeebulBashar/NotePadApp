@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#F0F8F7"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view"
+        />
+
+    <GridLayout
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/top_view"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="-50dp"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="12dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="7dp"
+            app:cardBackgroundColor="#9CCCC1"
+            >
+            <LinearLayout
+                android:id="@+id/noteIcon"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/note"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notes"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="12dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="7dp"
+            app:cardBackgroundColor="#9CCCC1"
+            >
+            <LinearLayout
+                android:id="@+id/stopwatchIcon"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/stopwatch"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stopwatch"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="12dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="7dp"
+            app:cardBackgroundColor="#9CCCC1"
+            >
+            <LinearLayout
+                android:id="@+id/exit"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_exit"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exit"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:elevation="16dp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="7dp"
+            app:cardBackgroundColor="#9CCCC1"
+            >
+            <LinearLayout
+                android:id="@+id/password"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_setpassword"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Protect"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+    <View
+        android:id="@+id/bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_top"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
